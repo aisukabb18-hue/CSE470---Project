@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fdf6f0 0%, #f0f4ff 50%, #f9f0ff 100%);
+  min-height: 100vh;
+  color: #4a4a6a;
+}
+
+input, button, textarea, select {
+  font-family: inherit;
+}
+
+:root {
+  --primary:     #a78bfa;
+  --primary-dark:#7c3aed;
+  --secondary:   #f9a8d4;
+  --accent:      #86efac;
+  --bg-card:     rgba(255, 255, 255, 0.85);
+  --bg-input:    rgba(255, 255, 255, 0.9);
+  --text-main:   #4a4a6a;
+  --text-light:  #8888aa;
+  --shadow:      0 8px 32px rgba(167, 139, 250, 0.15);
+  --radius:      16px;
+  --radius-sm:   10px;
+}
