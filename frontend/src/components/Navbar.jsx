@@ -1,6 +1,9 @@
+import { useTheme } from "../context/ThemeContext";
 import "./Navbar.css";
 
 const Navbar = ({ title }) => {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <header className="navbar">
       <div className="navbar-title">
@@ -15,6 +18,13 @@ const Navbar = ({ title }) => {
             day:     "numeric",
           })}
         </span>
+        <button
+          className="theme-toggle"
+          onClick={toggleTheme}
+          title="Toggle dark/light mode"
+        >
+          {theme === "light" ? "🌙" : "☀️"}
+        </button>
       </div>
     </header>
   );

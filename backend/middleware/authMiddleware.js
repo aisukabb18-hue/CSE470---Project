@@ -23,7 +23,7 @@ const adminOnly = (req, res, next) => {
 };
 
 const therapistOrAdmin = (req, res, next) => {
-  if (!["admin", "therapist"].includes(req.user?.role)) {
+  if (!["admin", "therapist", "user"].includes(req.user?.role)) {
     return res.status(403).json({ message: "Access denied" });
   }
   next();

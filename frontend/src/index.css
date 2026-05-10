@@ -28,3 +28,15 @@ input, button, textarea, select {
   --radius:      16px;
   --radius-sm:   10px;
 }
+
+[data-theme="dark"] {
+  --bg-card:   rgba(30, 30, 50, 0.85);
+  --bg-input:  rgba(40, 40, 60, 0.9);
+  --text-main: #e2e2f0;
+  --text-light:#9999bb;
+  --shadow:    0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] body {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
